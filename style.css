@@ -1,0 +1,31 @@
+/* analog clock css */
+.n-clock {
+	background-image: url(images/bg.png);
+	background-size: cover;
+    width: 250px;
+	height: 250px;
+	margin: 0 auto;
+   border-radius: 50%;
+   position: relative;
+   margin-top: 20px;
+    margin-bottom: 20px;
+}
+.n-clock div {
+	position: absolute;
+	background-size: cover;	
+	height: 100%;
+	width: 100%;
+}
+.n-clock .hour {
+	background-image: url(images/hour.png);
+	animation: hour 43200s infinite;
+}
+.n-clock .min {
+	background-image: url(images/min.png);
+	animation: min 3600s infinite;
+}
+.n-clock .sec {
+	background-image: url(images/sec.png);
+	animation: sec 60s infinite steps(60);
+}
+
